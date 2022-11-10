@@ -401,7 +401,6 @@ size_t so_fwrite(const void *ptr, size_t size, size_t nmemb, SO_FILE *stream)
 //todo...
 SO_FILE *so_popen(const char *command, const char *type)
 {
-
 	return NULL;
 }
 
