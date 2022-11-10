@@ -128,4 +128,4 @@ struct _so_file {
   * 
 
 ### WINDOWS
-  * https://www.cs.rpi.edu/academics/courses/fall01/os/# Own-stdio.h-LINUX-POSIX
+  * https://www.cs.rpi.edu/academics/courses/fall01/os/
