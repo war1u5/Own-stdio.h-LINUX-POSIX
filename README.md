@@ -14,11 +14,29 @@ _Grupa: C113D_
 Să se realizeze o implementare minimală a bibliotecii stdio, care să permită lucrul cu fișiere. Biblioteca va trebui să implementeze structura SO_FILE (similar cu FILE din biblioteca standard C), împreună cu funcțiile de citire/scriere. De asemenea, va trebui să ofere funcționalitatea de buffering. <br/>
 Rezolvarea temei va trebui să genereze o bibliotecă dinamică numită libso_stdio.so/so_stdio.dll care implementează funcțiile declarate în header-ul [so_stdio.h](https://github.com/systems-cs-pub-ro/so/blob/master/assignments/2-stdio/util/so_stdio.h).
 
-## Comenzi pentru rulare
-```bash 
+## Compilare si rulare
+#### Makefile
+```Makefile
+main: main.c libso_stdio.so path
+	gcc -g -Wall main.c -o main libso_stdio.so
+
+path:
+	export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+	
+libso_stdio.so: so_stdio.c
+	gcc -g -fPIC $? -shared -o libso_stdio.so
+
+clean:
+	rm -f *.o *~ main *.so
+```
+#### rulare
+```bash
 make clean
-nake main
-export LD_LIBRARY_PATH=.:D_LIBRARY_PATH
+```
+```bash
+make main
+```
+```bash
 ./main
 ```
 
