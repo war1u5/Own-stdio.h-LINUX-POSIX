@@ -185,11 +185,12 @@ struct _so_file {
 * https://wiki.mta.ro/c/3/pso/lab/02
 
 ### LINUX 
-* Structura handle
+* Structura
   * https://stackoverflow.com/questions/33536061/file-descriptors-and-file-handles-and-c#:~:text=File%20handle%20is%20a%20type,is%20the%20file%20descriptor)%3F
   * https://en.wikipedia.org/wiki/File_descriptor
   * [feof() flag](https://stackoverflow.com/questions/12337614/how-feof-works-in-c)
   * [ferror() flag](https://www.ibm.com/docs/en/zos/2.3.0?topic=functions-ferror-test-read-write-errors)
+  * https://github.com/rkibistu/Own-implementation-stdio.h
 
 * so_fopen() -> open() syscall
   * https://0xax.gitbooks.io/linux-insides/content/SysCall/linux-syscall-5.html
