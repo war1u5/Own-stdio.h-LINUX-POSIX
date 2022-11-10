@@ -94,6 +94,7 @@ struct _so_file {
 * https://0xax.gitbooks.io/linux-insides/content/SysCall/
 * https://www.tutorialspoint.com/system-calls-in-unix-and-windows#:~:text=System%20calls%20in%20Windows%20are,system%20using%20the%20system%20calls.
 * https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/
+* https://wiki.mta.ro/c/3/pso/lab/02
 
 ### LINUX 
 * Structura handle
@@ -101,7 +102,6 @@ struct _so_file {
   * https://en.wikipedia.org/wiki/File_descriptor
   * [feof() flag](https://stackoverflow.com/questions/12337614/how-feof-works-in-c)
   * [ferror() flag](https://www.ibm.com/docs/en/zos/2.3.0?topic=functions-ferror-test-read-write-errors)
-  * 
 
 * so_fopen() -> open() syscall
   * https://0xax.gitbooks.io/linux-insides/content/SysCall/linux-syscall-5.html
@@ -121,11 +121,9 @@ struct _so_file {
   * fflush() is typically used for output stream only. Its purpose is to clear (or flush) the output buffer and move the buffered data to console (in case of stdout) or disk (in case of file output stream)
   * https://www.geeksforgeeks.org/use-fflushstdin-c/
   * https://www.reddit.com/r/learnprogramming/comments/3br04y/c_can_someone_please_explain_fflushstdin_to_me/
-  * 
 
-* so_fwrite()
+* so_fwrite() -> write() syscall
   * https://chromium.googlesource.com/chromiumos/third_party/glibc/+/cvs/libc-970720/stdio/fwrite.c
-  * 
 
 ### WINDOWS
   * https://www.cs.rpi.edu/academics/courses/fall01/os/
